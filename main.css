@@ -15,6 +15,7 @@ body {
   font-family: var(--fontFamily);
   width: 100vw;
   margin: 0;
+  overflow-x: hidden;
 }
 h2,
 h3 {
@@ -33,6 +34,7 @@ button {
 
 /* Specfic or Unique */
 #container {
+  overflow-x: hidden;
   text-align: center;
   margin-top: 9rem;
 }
@@ -156,4 +158,46 @@ button {
 }
 #links .social-links img {
   margin: 1rem;
+}
+
+/* Tablet Styles */
+@media (min-width: 760px) {
+  body {
+    background-position: top center;
+    background-size: 100vw;
+  }
+  .buttons {
+    width: 50%;
+    margin-left: 11.7rem;
+  }
+  p {
+    padding: 2rem 7rem;
+  }
+
+  /* Card 2 */
+  #card-2 img {
+    width: 70%;
+  }
+  #card-2 .tools {
+    padding: 0 6rem;
+  }
+
+  /* Card 3 */
+  #card-3 .head p {
+    padding: 0 6rem;
+  }
+  #card-3 img {
+    width: 70%;
+    margin-top: 2rem;
+  }
+
+  /* Card 4 */
+  #card-4 {
+    padding: 0 6rem;
+  }
+
+  /* Card 6 */
+  #card-6 p {
+    padding: 2rem 7rem;
+  }
 }
