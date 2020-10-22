@@ -291,7 +291,7 @@ button {
   /* Company and Social Links */
   #links {
     display: grid;
-    grid-template-columns: 325px 700px 300px;
+    grid-template-columns: 300px 800px 200px;
     justify-content: center;
     align-content: center;
     height: 150px;
@@ -303,10 +303,17 @@ button {
   }
   #links .company-links {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 150px 150px 150px;
+    grid-gap: 1rem 3rem;
+    justify-content: left;
     text-align: left;
   }
   #links .social-links {
-    padding-left: 5rem;
+    padding-left: 0;
+    text-align: right;
+  }
+  #links .social-links a img {
+    margin: 1rem 0 0 0;
+    padding-left: 1rem;
   }
 }
