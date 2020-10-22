@@ -57,6 +57,16 @@ button {
   color: #fff;
   border-color: var(--lightBlue);
 }
+.cyan:hover {
+  background: hsl(171, 66%, 50%);
+  cursor: pointer;
+  border-color: hsl(171, 66%, 50%);
+}
+.blue:hover {
+  background: hsl(233, 100%, 75%);
+  cursor: pointer;
+  border-color: hsl(233, 100%, 75%);
+}
 .tools {
   margin-top: 4rem;
 }
@@ -153,6 +163,9 @@ button {
   text-decoration: none;
   color: var(--dkGrayBlue);
 }
+#links a:hover {
+  color: var(--strongCyan);
+}
 #links .social-links {
   margin-top: 1rem;
 }
@@ -199,5 +212,101 @@ button {
   /* Card 6 */
   #card-6 p {
     padding: 2rem 7rem;
+  }
+}
+
+/* Full Screen Styles */
+@media (min-width: 1430px) {
+  body {
+    background: url(images/bg-header-desktop.png) no-repeat;
+  }
+  p {
+    padding: 2rem 23rem;
+  }
+  button {
+    padding: 1rem 1.75rem;
+    margin-right: 0.5rem;
+  }
+
+  /* Global styles */
+  .buttons {
+    display: inline;
+    grid-gap: 0;
+    width: 100%;
+    margin: 0;
+  }
+
+  /* Card 2 */
+  #card-2 .tools img {
+    float: left;
+    width: 60%;
+    margin-left: -8rem;
+  }
+  #card-2 .tools div {
+    float: right;
+    display: grid;
+    text-align: left;
+    width: 500px;
+    padding-top: 2rem;
+  }
+  #card-2 .tools .tool {
+    padding-top: 2rem;
+  }
+  #card-2 .tools .tool p {
+    padding: 0;
+    padding-right: 7rem;
+  }
+
+  /* Card 3 */
+  #card-3 {
+    clear: both;
+    padding-top: 8rem;
+  }
+  #card-3 .head p {
+    padding: 2rem 23rem;
+  }
+
+  /* Card 4 */
+  #card-4 .tools {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #card-4 .tools .tool p {
+    padding: 1rem 0.5rem;
+  }
+
+  /* Card 5 */
+  #card-5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 90%;
+    padding-left: 4rem;
+  }
+
+  /* Card 6 */
+  #card-6 p {
+    padding: 2rem 23rem;
+  }
+
+  /* Company and Social Links */
+  #links {
+    display: grid;
+    grid-template-columns: 325px 700px 300px;
+    justify-content: center;
+    align-content: center;
+    height: 150px;
+  }
+  #links .logo {
+    margin: 0;
+    width: 25%;
+    margin-top: 1rem;
+  }
+  #links .company-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: left;
+  }
+  #links .social-links {
+    padding-left: 5rem;
   }
 }
