@@ -219,6 +219,7 @@ button {
 @media (min-width: 1430px) {
   body {
     background: url(images/bg-header-desktop.png) no-repeat;
+    background-size: 100vw;
   }
   p {
     padding: 2rem 23rem;
